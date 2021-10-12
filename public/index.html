@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+	<title>EmakinaRS Chat</title>
+</head>
+
+<body>
+	<div class="index">
+		<div class="join-container">
+			<header class="join-header">
+				<img src="assets/download.png" />
+				<h1>Emakina.RS</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" placeholder="Enter username..."
+						class="form-control form-control-lg" required />
+
+					<label for="room">Room</label>
+					<select name="room" id="room" class="form-select">
+						<option value="SoftwareDeveloper">Software Developer</option>
+						<option value="React Developer">React Developer</option>
+						<option value="Front-end Developer">Front-end Developer</option>
+						<option value="QA Engineer">QA Engineer</option>
+						<option value="Marketing Cloud Developer">Marketing Cloud Developer</option>
+						<option value="Paid Business Analyst Internship">Paid Business Analyst Internship</option>
+					</select>
+
+					<button type="submit" class="btn btn-primary" style="opacity: 1">Join Chat</button>
+				</form>
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>

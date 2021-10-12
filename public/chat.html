@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Emakina Chat App</title>
+</head>
+
+<body>
+  <div class="chat-body">
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="logo">
+        <img src="assets/download.png" width="80px" height="80px" />
+        <h1>Emakina.RS</h1>
+      </div>
+
+      <a id="leave-btn" class="btn"><i class="fas fa-sign-out-alt"></i> Leave Room</a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-users"></i> Users</h3>
+        <ul id="users"></ul>
+      </div>
+      <div class="chat-messages"></div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        
+        <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off"
+          class="form-control form-control-lg" />
+        <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Send</button>
+
+        <label type="button" class="btn btn-primary" for="plain_input_element" class="btn upload-label"><i
+            class="fas fa-file-upload"></i> Image</label>
+        <input type="file" id="plain_input_element" style="display:none" />
+
+        <button type="button" class="btn btn-primary" id="record"><i class="fas fa-microphone"></i> Record</button>
+        <button type="button" class="btn btn-warning" id="stop" style="display: none;" disabled><i
+          class="fas fa-paper-microphone"></i>Recording for 5s...</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="/siofu/client.js"></script>
+  <script src="js/main.js"></script>
+ 
+</div>
+</body>
+
+</html>
